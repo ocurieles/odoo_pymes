@@ -23,7 +23,7 @@
     <record id="pymes_product_template_form_view" model="ir.ui.view">
         <field name="name">pymes.product.form</field>
         <field name="model">product.template</field>
-        <field eval="2" name="priority"/>
+        <field eval="16" name="priority"/>
         <field name="arch" type="xml">
             <form string="Product">
                 <header>
@@ -60,7 +60,8 @@
                                     <field name="categ_id" string="Product Category"/>
                                     <field name="tag_ids" widget="many2many_tags" placeholder="Tags..." domain="[('active', '=', True)]"/>
                                     <field name="description_sale"/>
-                                    <field name="is_published"/>
+                                    <field name="is_published" class="oe_read_only"/>
+                                    <field name="public_categ_ids" options="{'no_create': True}" widget="many2many_tags"/>
                                 </group>
                                 <group name="group_standard_price">
                                     <label for="list_price"/>
