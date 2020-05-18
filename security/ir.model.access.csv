@@ -1,5 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_pymes_custom_pymes_custom,pymes_custom.user,model_product_template,base.group_user,1,1,1,1
+access_pymes_custom_pymes_custom,pymes_custom.user,model_product_template,pymes_product_group,1,1,1,1
+access_pymes_custom_pymes_custom,pymes_custom.user,model_res_partner,pymes_product_group,1,1,1,1
+
 
 
 

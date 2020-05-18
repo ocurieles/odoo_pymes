@@ -1,0 +1,275 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pymes_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-18 13:32+0000\n"
+"PO-Revision-Date: 2020-05-18 13:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid ""
+"<span attrs=\"{'invisible': [('pricelist_item_count', '=', 1)]}\">\n"
+"                                          Extra Prices\n"
+"                                        </span>\n"
+"                                        <span attrs=\"{'invisible': [('pricelist_item_count', '!=', 1)]}\">\n"
+"                                          Extra Price\n"
+"                                        </span>"
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.actions.act_window,help:pymes_custom.pymes_partner_action
+#: model_terms:ir.actions.act_window,help:pymes_custom.pymes_product_action
+msgid "Add a new Product"
+msgstr "Agregar Producto"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Attributes"
+msgstr "Atributos"
+
+#. module: pymes_custom
+#: model:ir.model.fields,field_description:pymes_custom.field_res_partner__bank_id
+#: model:ir.model.fields,field_description:pymes_custom.field_res_users__bank_id
+msgid "Bank"
+msgstr "Banco"
+
+#. module: pymes_custom
+#: model:ir.model.fields,field_description:pymes_custom.field_res_partner__account_id
+#: model:ir.model.fields,field_description:pymes_custom.field_res_users__account_id
+msgid "Bank Account"
+msgstr "Cuenta Bancaria"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "ByTag"
+msgstr "Por Tag"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Can be Purchased"
+msgstr "Puede ser comprado"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Can be Sold"
+msgstr "Puede ser vendido"
+
+#. module: pymes_custom
+#: model:ir.model,name:pymes_custom.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: pymes_custom
+#: model:ir.actions.act_window,name:pymes_custom.pymes_partner_action
+msgid "Customer Information"
+msgstr "Ficha Cliente"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Future Activities"
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "General Information"
+msgstr "Información General"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_partner_form_inherit
+msgid "Personal Information"
+msgstr "Información Personal"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Internal Notes"
+msgstr "Notas Internas"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Inventory"
+msgstr "Inventario"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Late Activities"
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Logistics"
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.actions.act_window,help:pymes_custom.pymes_partner_action
+#: model_terms:ir.actions.act_window,help:pymes_custom.pymes_product_action
+msgid "Maintain your products information"
+msgstr ""
+
+#. module: pymes_custom
+#: model:ir.ui.menu,name:pymes_custom.menu_master_data
+msgid "Master Data"
+msgstr "Datos Maestros"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Packaging"
+msgstr ""
+
+#. module: pymes_custom
+#: model:ir.ui.menu,name:pymes_custom.menu_partner_list
+msgid "Partners"
+msgstr "Contactos"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Product"
+msgstr "Producto"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Product Category"
+msgstr "Categoría de productos"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Product Name"
+msgstr "Producto"
+
+#. module: pymes_custom
+#: model:ir.module.category,description:pymes_custom.module_product_pymes_category
+#: model:ir.module.category,name:pymes_custom.module_product_pymes_category
+msgid "Product Pyme Category"
+msgstr "Categoría de Producto"
+
+#. module: pymes_custom
+#: model:ir.model,name:pymes_custom.model_product_template
+msgid "Product Template"
+msgstr "Plantilla producto"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Product Type"
+msgstr "Tipo de Producto"
+
+#. module: pymes_custom
+#: model:ir.actions.act_window,name:pymes_custom.pymes_product_action
+#: model:ir.ui.menu,name:pymes_custom.menu_product_list
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Products"
+msgstr "Productos"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: pymes_custom
+#: model:ir.ui.menu,name:pymes_custom.menu_root
+msgid "Pymes"
+msgstr "Pymes Cumbaya"
+
+#. module: pymes_custom
+#: model:res.groups,comment:pymes_custom.pymes_product_group
+#: model:res.groups,name:pymes_custom.pymes_product_group
+msgid "Pymes Product Group"
+msgstr "Grupo Pymes"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Sales Description"
+msgstr "Descripción de Ventas"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Services"
+msgstr "Servicios"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Show all records which has next action date is before today"
+msgstr ""
+
+#. module: pymes_custom
+#: model:ir.model.fields,field_description:pymes_custom.field_res_users__tag_ids
+msgid "Tag Pyme"
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.form_inherit_pymes_user
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Tags..."
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "This note is added to sales orders and invoices."
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "This note is only for internal purposes."
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Today Activities"
+msgstr ""
+
+#. module: pymes_custom
+#: model:ir.model,name:pymes_custom.model_res_users
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Vendor Bills"
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "Volume"
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_search_view
+msgid "Warnings"
+msgstr ""
+
+#. module: pymes_custom
+#: model:ir.model.fields,field_description:pymes_custom.field_product_product__actual_user
+#: model:ir.model.fields,field_description:pymes_custom.field_product_template__actual_user
+msgid "actual_user"
+msgstr ""
+
+#. module: pymes_custom
+#: model_terms:ir.ui.view,arch_db:pymes_custom.pymes_product_template_form_view
+msgid "per"
+msgstr ""
