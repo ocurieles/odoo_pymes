@@ -10,7 +10,7 @@
                 <xpath expr="//page[@name='internal_notes']" position='after'>
                     <page string='Personal Information'>
                         <group>
-                            <label for="bank_id"/>
+                            <!--<label for="bank_id"/>
                             <div name="Bank">
                                 <field name="bank_id" options="{'no_create': True}"/>
                             </div>
@@ -19,7 +19,7 @@
                                 <div name="Bank Account">
                                     <field name="account_id"/>
                                 </div>
-                            </group>
+                            </group> -->
                         </group>
                     </page>
                 </xpath>
