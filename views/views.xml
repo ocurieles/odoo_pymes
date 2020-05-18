@@ -247,7 +247,7 @@
 
  <!-- Top menu item -->
 
-    <menuitem name="Pymes" id="menu_root" web_icon="pymes_custom,static/src/image/icon.png"/>
+    <menuitem name="Pymes" id="menu_root" web_icon="odoo_pymes,static/src/image/icon.png"/>
 
       <menuitem id="menu_master_data"
                   name="Master Data"
