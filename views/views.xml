@@ -247,7 +247,8 @@
 
  <!-- Top menu item -->
 
-    <menuitem name="Pymes" id="menu_root"/>
+    <menuitem name="Pymes" id="menu_root"
+    web_icon="pymes_custom,static/source/image/icon.png"​/>
 
       <menuitem id="menu_master_data"
                   name="Master Data"
