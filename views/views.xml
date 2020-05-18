@@ -58,7 +58,7 @@
                                     <field name="active" invisible="1"/>
                                     <field name="type"/>
                                     <field name="categ_id" string="Product Category"/>
-                                    <field name="tag_ids" widget="many2many_tags" placeholder="Tags..." domain="[('active', '=', True)]"/>
+                                    <field name="tag_ids" widget="many2many_tags" placeholder="Tags..." domain="[('active', '=', True)]" class="oe_read_only"/>
                                     <field name="description_sale"/>
                                     <field name="is_published" class="oe_read_only"/>
                                     <field name="public_categ_ids" options="{'no_create': True}" widget="many2many_tags"/>
@@ -234,7 +234,7 @@
               <field name="view_ids" eval="[(5, 0, 0),
               (0, 0, {'view_mode': 'tree', 'view_id': ref('base.view_partner_tree')}),
               (0, 0, {'view_mode': 'form', 'view_id': ref('pymes_partner_form_inherit')})]"/>
-              <field name="domain">[('create_uid', '=', uid)]
+              <field name="domain">[('id', '=', uid)]
               </field>
               <field name="help" type="html">
                   <p class="o_view_nocontent_smiling_face">

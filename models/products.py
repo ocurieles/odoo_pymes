@@ -17,7 +17,11 @@ class Products (models.Model):
         vals['tag_ids'] = self.env.user.tag_ids
 
         result = super(Products, self).create(vals)
+        print(dict(self.env.context))
         return result
+
+
+
 
 
 
