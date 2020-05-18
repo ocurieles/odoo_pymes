@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 13:32+0000\n"
-"PO-Revision-Date: 2020-05-18 13:32+0000\n"
+"POT-Creation-Date: 2020-05-18 22:48+0000\n"
+"PO-Revision-Date: 2020-05-18 22:48+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -27,6 +27,12 @@ msgid ""
 msgstr ""
 
 #. module: odoo_pymes
+#: model:ir.model.fields,field_description:odoo_pymes.field_account_setup_bank_manual_config__account_type
+#: model:ir.model.fields,field_description:odoo_pymes.field_res_partner_bank__account_type
+msgid "Account Type"
+msgstr "Tipo de Cuenta"
+
+#. module: odoo_pymes
 #: model_terms:ir.actions.act_window,help:odoo_pymes.pymes_partner_action
 #: model_terms:ir.actions.act_window,help:odoo_pymes.pymes_product_action
 msgid "Add a new Product"
@@ -44,16 +50,10 @@ msgid "Attributes"
 msgstr "Atributos"
 
 #. module: odoo_pymes
-#: model:ir.model.fields,field_description:odoo_pymes.field_res_partner__bank_id
-#: model:ir.model.fields,field_description:odoo_pymes.field_res_users__bank_id
-msgid "Bank"
-msgstr "Banco"
-
-#. module: odoo_pymes
-#: model:ir.model.fields,field_description:odoo_pymes.field_res_partner__account_id
-#: model:ir.model.fields,field_description:odoo_pymes.field_res_users__account_id
-msgid "Bank Account"
-msgstr "Cuenta Bancaria"
+#: model:ir.model,name:odoo_pymes.model_res_partner_bank
+#: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_partner_form_inherit
+msgid "Bank Accounts"
+msgstr "Cuentas bancarias"
 
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_search_view
@@ -71,6 +71,17 @@ msgid "Can be Sold"
 msgstr "Puede ser vendido"
 
 #. module: odoo_pymes
+#: model:ir.model.fields.selection,name:odoo_pymes.selection__res_partner_bank__account_type__cheking
+msgid "Checking Account"
+msgstr "Cuenta Corriente"
+
+#. module: odoo_pymes
+#: model:ir.model.fields,field_description:odoo_pymes.field_res_partner__company_specs
+#: model:ir.model.fields,field_description:odoo_pymes.field_res_users__company_specs
+msgid "Company Specs"
+msgstr "Especificicaciones Compañia"
+
+#. module: odoo_pymes
 #: model:ir.model,name:odoo_pymes.model_res_partner
 msgid "Contact"
 msgstr "Contacto"
@@ -83,7 +94,7 @@ msgstr "Ficha Cliente"
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_search_view
 msgid "Future Activities"
-msgstr ""
+msgstr "Actividades"
 
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_template_form_view
@@ -94,11 +105,6 @@ msgstr "Información General"
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_search_view
 msgid "Group By"
 msgstr "Agrupar por"
-
-#. module: odoo_pymes
-#: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_partner_form_inherit
-msgid "Personal Information"
-msgstr "Información Personal"
 
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_template_form_view
@@ -124,7 +130,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:odoo_pymes.pymes_partner_action
 #: model_terms:ir.actions.act_window,help:odoo_pymes.pymes_product_action
 msgid "Maintain your products information"
-msgstr ""
+msgstr "Mantener información de productos"
 
 #. module: odoo_pymes
 #: model:ir.ui.menu,name:odoo_pymes.menu_master_data
@@ -132,14 +138,25 @@ msgid "Master Data"
 msgstr "Datos Maestros"
 
 #. module: odoo_pymes
+#: model:ir.model.fields,field_description:odoo_pymes.field_res_partner__name
+#: model:ir.model.fields,field_description:odoo_pymes.field_res_users__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_template_form_view
 msgid "Packaging"
-msgstr ""
+msgstr "Paquetes"
 
 #. module: odoo_pymes
 #: model:ir.ui.menu,name:odoo_pymes.menu_partner_list
 msgid "Partners"
 msgstr "Contactos"
+
+#. module: odoo_pymes
+#: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_partner_form_inherit
+msgid "Personal Information"
+msgstr "Información Personal"
 
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_search_view
@@ -208,6 +225,11 @@ msgid "Sales Description"
 msgstr "Descripción de Ventas"
 
 #. module: odoo_pymes
+#: model:ir.model.fields.selection,name:odoo_pymes.selection__res_partner_bank__account_type__saving
+msgid "Saving Account"
+msgstr "Cuenta de Ahorros"
+
+#. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_search_view
 msgid "Services"
 msgstr "Servicios"
@@ -241,7 +263,7 @@ msgstr ""
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_search_view
 msgid "Today Activities"
-msgstr ""
+msgstr "Actividades para hoy"
 
 #. module: odoo_pymes
 #: model:ir.model,name:odoo_pymes.model_res_users
@@ -251,23 +273,28 @@ msgstr "Usuarios"
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_template_form_view
 msgid "Vendor Bills"
-msgstr ""
+msgstr "Facturas de compras"
+
+#. module: odoo_pymes
+#: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_partner_form_inherit
+msgid "View accounts detail"
+msgstr "Ver detalles de cuentas"
 
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_template_form_view
 msgid "Volume"
-msgstr ""
+msgstr "Volumen"
 
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_search_view
 msgid "Warnings"
-msgstr ""
+msgstr "Peligro"
 
 #. module: odoo_pymes
 #: model:ir.model.fields,field_description:odoo_pymes.field_product_product__actual_user
 #: model:ir.model.fields,field_description:odoo_pymes.field_product_template__actual_user
 msgid "actual_user"
-msgstr ""
+msgstr "Usuario actual"
 
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_template_form_view

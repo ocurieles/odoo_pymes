@@ -199,6 +199,7 @@
                                         <field name="sequence" widget="handle"/>
                                         <field name="bank_id"/>
                                         <field name="acc_number"/>
+                                        <field name="account_type"/>
                                         <field name="acc_holder_name" invisible="1"/>
                                     </tree>
                                 </field>
