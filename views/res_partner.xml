@@ -9,18 +9,19 @@
             <field name="arch" type="xml">
                 <xpath expr="//page[@name='internal_notes']" position='after'>
                     <page string='Personal Information'>
-                        <group>
-                            <!--<label for="bank_id"/>
-                            <div name="Bank">
-                                <field name="bank_id" options="{'no_create': True}"/>
-                            </div>
-                            <group>
-                                <label for="account_id"/>
-                                <div name="Bank Account">
-                                    <field name="account_id"/>
-                                </div>
-                            </group> -->
-                        </group>
+                         <group>
+                            <group string="Bank Accounts" name="banks">
+                                <field name="bank_ids" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="bank_id"/>
+                                        <field name="acc_number"/>
+                                        <field name="acc_holder_name" invisible="1"/>
+                                    </tree>
+                                </field>
+                                <button type="action" class="btn-link" name="65" context="{'search_default_partner_id': active_id, 'default_partner_id': active_id, 'form_view_ref': 'account.view_company_partner_bank_form'}" string="View accounts detail" colspan="2"/>
+                            </group>
+                         </group>
                     </page>
                 </xpath>
             </field>
