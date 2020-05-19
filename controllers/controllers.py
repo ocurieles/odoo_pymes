@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-# from odoo import http
+from odoo import http
 
 
-# class PymesCustom(http.Controller):
-#     @http.route('/pymes_custom/pymes_custom/', auth='public')
-#     def index(self, **kw):
-#         return "Hello, world"
+class PymesCustom(http.Controller):
+     @http.route('/pymes_custom/pymes_custom/', auth='public')
+     def index(self, **kw):
+         return "Hello, world"
 
 #     @http.route('/pymes_custom/pymes_custom/objects/', auth='public')
 #     def list(self, **kw):

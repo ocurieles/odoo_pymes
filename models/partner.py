@@ -8,3 +8,13 @@ class Partner(models.Model):
 
     company_specs = name = fields.Char()
 
+    def go_website(self):
+        website = self.env['website'].search([
+            ('id', '=', 1), ])
+        website._force()
+        return {
+            'type': 'ir.actions.act_url',
+            'url': '/',
+            'target': 'self',
+        }
+

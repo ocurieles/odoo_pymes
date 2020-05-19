@@ -184,7 +184,7 @@
         </field>
     </record>
 
-              <record id="pymes_partner_form_inherit" model="ir.ui.view">
+            <record id="pymes_partner_form_inherit" model="ir.ui.view">
             <field name="name">pymes_partner.form</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
@@ -210,6 +210,8 @@
                 </xpath>
             </field>
         </record>
+
+
 
   <record id="pymes_product_action" model="ir.actions.act_window">
               <field name="name">Products</field>
@@ -246,6 +248,26 @@
               </field>
           </record>
 
+        <!-- Dashboard -->
+        <record id="backend_dashboard" model="ir.actions.client">
+            <field name="name">Analytics</field>
+            <field name="tag">backend_dashboard</field>
+        </record>
+
+      <record id="ir_actions_server_inherit_website_dashboard" model="ir.actions.server">
+            <field name="name">Website: Dashboard</field>
+            <field name="model_id" ref="website.model_website"/>
+            <field name="state">code</field>
+            <field name="code">action = model.action_dashboard_redirect()</field>
+      </record>
+
+     <record id="ir_actions_server_website_google_analytics" model="ir.actions.server">
+            <field name="name">Website: Dashboard</field>
+            <field name="model_id" ref="website.model_website"/>
+            <field name="state">code</field>
+            <field name="code">action = model.env.ref('website.backend_dashboard').read()[0]</field>
+     </record>
+
  <!-- Top menu item -->
 
     <menuitem name="Pymes" id="menu_root" web_icon="odoo_pymes,static/src/image/icon.png"/>
@@ -254,6 +276,11 @@
                   name="Master Data"
                   parent="menu_root"
                   sequence="1"/>
+
+      <menuitem id="menu_website"
+                  name="WebSite"
+                  parent="menu_root"
+                  sequence="2"/>
 
       <menuitem
         id="menu_product_list"
@@ -272,6 +299,14 @@
           groups="pymes_product_group"
           sequence="1"
       />
+
+      <menuitem id="ir_actions_server_inherit_website_dashboard" parent="menu_website"
+            sequence="10" name="eCommerce Dashboard"
+            action="website.ir_actions_server_website_dashboard" active="0"/>
+
+      <menuitem id="ir_actions_server_website_google_analytics" parent="menu_website"
+            sequence="20" name="Analytics"
+            action="website.ir_actions_server_website_google_analytics"/>
 
   </data>
 </odoo>

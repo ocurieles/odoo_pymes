@@ -7,6 +7,3 @@ class ModelName (models.Model):
     account_type = fields.Selection([
         ('cheking', 'Checking Account'),
         ('saving', 'Saving Account')])
-    
-
-

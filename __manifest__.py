@@ -22,6 +22,7 @@
     # any module necessary for this one to work correctly
     'depends': ['account',
                 'base',
+                'website',
                 'atharva_theme_general'
                 ],
 
