@@ -49,10 +49,7 @@
                                 <field name="sale_ok"/>
                                 <label for="sale_ok"/>
                             </div>
-                            <div>
-                                <field name="purchase_ok"/>
-                                <label for="purchase_ok"/>
-                            </div>
+
                         </div>
                     </div>
                     <notebook>
@@ -61,7 +58,7 @@
                                 <group name="group_general">
                                     <field name="active" invisible="1"/>
                                     <field name="type"/>
-                                    <field name="categ_id" string="Product Category"/>
+                                    <field name="categ_id" string="Product Category" invisible="1"/>
                                     <field name="tag_ids" widget="many2many_tags" placeholder="Tags..." domain="[('active', '=', True)]" class="oe_read_only"/>
                                     <field name="description_sale"/>
                                     <field name="is_published" class="oe_read_only"/>
