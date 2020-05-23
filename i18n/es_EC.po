@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 22:48+0000\n"
-"PO-Revision-Date: 2020-05-18 22:48+0000\n"
+"POT-Creation-Date: 2020-05-23 03:21+0000\n"
+"PO-Revision-Date: 2020-05-23 03:21+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -37,6 +37,12 @@ msgstr "Tipo de Cuenta"
 #: model_terms:ir.actions.act_window,help:odoo_pymes.pymes_product_action
 msgid "Add a new Product"
 msgstr "Agregar Producto"
+
+#. module: odoo_pymes
+#: model:ir.actions.client,name:odoo_pymes.backend_dashboard
+#: model:ir.ui.menu,name:odoo_pymes.ir_actions_server_website_google_analytics
+msgid "Analytics"
+msgstr ""
 
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_search_view
@@ -124,7 +130,7 @@ msgstr ""
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_template_form_view
 msgid "Logistics"
-msgstr ""
+msgstr "Logística"
 
 #. module: odoo_pymes
 #: model_terms:ir.actions.act_window,help:odoo_pymes.pymes_partner_action
@@ -291,10 +297,26 @@ msgid "Warnings"
 msgstr "Peligro"
 
 #. module: odoo_pymes
+#: model:ir.ui.menu,name:odoo_pymes.menu_website
+msgid "WebSite"
+msgstr ""
+
+#. module: odoo_pymes
 #: model:ir.model.fields,field_description:odoo_pymes.field_product_product__actual_user
 #: model:ir.model.fields,field_description:odoo_pymes.field_product_template__actual_user
 msgid "actual_user"
 msgstr "Usuario actual"
+
+#. module: odoo_pymes
+#: model:ir.ui.menu,name:odoo_pymes.ir_actions_server_inherit_website_dashboard
+msgid "eCommerce Dashboard"
+msgstr ""
+
+#. module: odoo_pymes
+#: model:ir.model.fields,field_description:odoo_pymes.field_product_product__self_delivery
+#: model:ir.model.fields,field_description:odoo_pymes.field_product_template__self_delivery
+msgid "isSelfDelivery"
+msgstr "Envio Propio"
 
 #. module: odoo_pymes
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_template_form_view

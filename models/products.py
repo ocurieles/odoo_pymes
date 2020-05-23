@@ -5,6 +5,7 @@ class Products (models.Model):
     _inherit = 'product.template'
 
     actual_user = fields.Integer('actual_user', compute='_get_actual_user', store=False)
+    self_delivery = fields.Boolean('isSelfDelivery', default=False)
 
     @api.depends_context('user')
     def _get_actual_user(self):
