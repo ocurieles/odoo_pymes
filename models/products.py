@@ -24,6 +24,20 @@ class Products(models.Model):
         result.create_supplier_info()
         return result
 
+    @api.model
+    def update_supplier_info(self, values):
+        products = self.env['product.template'].search([('is_published', '=', True)])
+
+        for product in products:
+            supplier_info = self.env['product.supplierinfo'].sudo().search([
+                ('product_tmpl_id.id', '=', product.id)
+            ])
+
+            if not supplier_info:
+                self.create_supplier_info(product)
+
+        return
+
     def create_supplier_info(self):
         res = self.env['product.supplierinfo']
 
@@ -37,10 +51,16 @@ class Products(models.Model):
             'delay': 1
         })
 
-    '''@api.model
-    def create_partner_related(self):
-        products = self.env['product.template'].search(self)
-        for product in products:
-            data = SupplierInfo.create({'name': self.create_uid.partner_id,'product_tmpl_id': product.id, 'min_quantity':1,
-                                        'price': product.price})
-                                        '''
+    def create_supplier_info(self, product):
+        res = self.env['product.supplierinfo']
+
+        # create a supplier_info
+        product.env['product.supplierinfo'].create({
+            'name': self.env.user.partner_id.id,
+            'product_tmpl_id': product.id,
+            'price': product.list_price,
+            'currency_id': product.currency_id.id,
+            'min_qty': 1,
+            'delay': 1
+        })
+
