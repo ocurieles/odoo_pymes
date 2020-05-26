@@ -35,9 +35,11 @@
                     <field name='attribute_line_ids' invisible='1'/>
                     <div name="button_box" class="oe_right oe_button_box"/>
                     <div>
-                    <button type="object"
-                    name="update_supplier_info"
-                    string="Update Supplier Information" class="oe_stat_button" icon="fa-refresh"/>
+                    <button string="Update Quantity"
+                            type="object"
+                            groups="stock.group_stock_manager"
+                            name="action_update_quantity_on_hand"
+                            attrs="{'invisible': [('type', '!=', 'product')]}"/>
                     </div>
                     <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
                     <field name="id" invisible="True"/>
@@ -69,6 +71,7 @@
                                     <field name="public_categ_ids" options="{'no_create': True}" widget="many2many_tags"/>
                                     <field name="default_code"/>
                                     <field name="self_delivery"/>
+                                    <field name="inventory_availability"/>
                                 </group>
                                 <group name="group_standard_price">
                                     <label for="list_price"/>

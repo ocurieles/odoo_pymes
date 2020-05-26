@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-26 06:45+0000\n"
-"PO-Revision-Date: 2020-05-26 06:45+0000\n"
+"POT-Creation-Date: 2020-05-26 22:46+0000\n"
+"PO-Revision-Date: 2020-05-26 22:46+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -270,6 +270,11 @@ msgstr "Esta nota es para propositos internos solamente"
 #: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_search_view
 msgid "Today Activities"
 msgstr "Actividades para hoy"
+
+#. module: odoo_pymes
+#: model_terms:ir.ui.view,arch_db:odoo_pymes.pymes_product_template_form_view
+msgid "Update Quantity"
+msgstr "Actualizar Cantidad en Mano"
 
 #. module: odoo_pymes
 #: model:ir.model,name:odoo_pymes.model_res_users
