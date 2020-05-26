@@ -63,6 +63,7 @@
                                     <field name="is_published" class="oe_read_only"/>
                                     <field name="public_categ_ids" options="{'no_create': True}" widget="many2many_tags"/>
                                     <field name="default_code"/>
+                                    <field name="self_delivery"/>
                                 </group>
                                 <group name="group_standard_price">
                                     <label for="list_price"/>
@@ -83,7 +84,6 @@
                                     <label for="standard_price" groups="base.group_user" attrs="{'invisible': [('product_variant_count', '&gt;', 1), ('is_product_variant', '=', False)]}"/>
                                     <div name="standard_price_uom" groups="base.group_user" attrs="{'invisible': [('product_variant_count', '&gt;', 1), ('is_product_variant', '=', False)]}" class="o_row">
                                         <field name="standard_price" widget='monetary' options="{'currency_field': 'cost_currency_id'}"/>
-                                        <field name="self_delivery"/>
                                         <span groups="uom.group_uom" class="oe_read_only">per
                                             <field name="uom_name"/>
                                         </span>
@@ -143,6 +143,10 @@
                     <field name="activity_ids" widget="mail_activity"/>
                     <field name="message_ids" widget="mail_thread"/>
                 </div>
+
+
+
+
             </form>
         </field>
     </record>

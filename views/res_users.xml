@@ -7,7 +7,7 @@
             <field name="inherit_id" ref="base.view_users_form"/>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='login']" position="after">
+                <xpath expr="//field[@name='image_1920']" position="after">
                     <field name="tag_ids" widget="many2many_tags" placeholder="Tags..." domain="[('active', '=', True)]"/>
                 </xpath>
             </field>
