@@ -10,6 +10,9 @@
                 <xpath expr="//field[@name='type']" position="after">
                     <field name="tag_ids"/>
                 </xpath>
+                <xpath expr="//field[@name='list_price']" position="after">
+                    <field name="list_price" context="{'default_list_price': 0}"/>
+                </xpath>
             </field>
         </record>
     </data>

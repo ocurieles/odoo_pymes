@@ -1,8 +1,8 @@
-from odoo import fields, models, api
-from odoo.addons.product.models.product import SupplierInfo
+from odoo import fields, models, api, _
+from odoo.exceptions import AccessError, UserError, ValidationError
 
 
-class Products (models.Model):
+class Products(models.Model):
     _inherit = 'product.template'
 
     actual_user = fields.Integer('actual_user', compute='_get_actual_user', store=False)
@@ -15,6 +15,9 @@ class Products (models.Model):
 
     @api.model
     def create(self, vals):
+        if vals['list_price'] == 1.0:
+            raise UserError(_('You need set the Price'))
+
         vals['tag_ids'] = self.env.user.tag_ids
 
         result = super(Products, self).create(vals)
@@ -33,9 +36,6 @@ class Products (models.Model):
             'min_qty': 1,
             'delay': 1
         })
-
-
-
 
     '''@api.model
     def create_partner_related(self):
