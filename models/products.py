@@ -21,11 +21,11 @@ class Products(models.Model):
         vals['tag_ids'] = self.env.user.tag_ids
 
         result = super(Products, self).create(vals)
-        result.create_supplier_info()
+        result.create_first_supplier_info()
         return result
 
     @api.model
-    def update_supplier_info(self, values):
+    def update_supplier_info(self):
         products = self.env['product.template'].search([('is_published', '=', True)])
 
         for product in products:
@@ -38,7 +38,7 @@ class Products(models.Model):
 
         return
 
-    def create_supplier_info(self):
+    def create_first_supplier_info(self):
         res = self.env['product.supplierinfo']
 
         # create a supplier_info
