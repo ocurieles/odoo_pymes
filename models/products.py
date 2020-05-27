@@ -38,6 +38,16 @@ class Products(models.Model):
 
         return
 
+    def update_stock(self):
+        default_product_id = len(self.product_variant_ids) == 1 and self.product_variant_id.id
+        action = self.env.ref('stock.action_change_product_quantity').read()[0]
+        action['context'] = dict(
+            self.env.context,
+            default_product_id=default_product_id,
+            default_product_tmpl_id=self.id
+        )
+        return action
+
     def create_first_supplier_info(self):
         res = self.env['product.supplierinfo']
 

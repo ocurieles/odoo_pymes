@@ -33,7 +33,7 @@
                     <button string="Update Quantity"
                             type="object"
                             groups="odoo_pymes.pymes_product_group"
-                            name="action_update_quantity_on_hand"
+                            name="update_stock"
                             attrs="{'invisible': [('type', '!=', 'product')]}"/>
                 </div>
                 <sheet>
