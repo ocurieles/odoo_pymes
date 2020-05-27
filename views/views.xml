@@ -32,7 +32,7 @@
                 <div class="o_form_statusbar">
                     <button string="Update Quantity"
                             type="object"
-                            groups="stock.group_stock_manager"
+                            groups="odoo_pymes.pymes_product_group"
                             name="action_update_quantity_on_hand"
                             attrs="{'invisible': [('type', '!=', 'product')]}"/>
                 </div>
