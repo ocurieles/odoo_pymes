@@ -11,7 +11,6 @@ class Products(models.Model):
     @api.depends_context('user')
     def _get_actual_user(self):
         self.actual_user = self.env.user.tag_ids.id
-        print(self.env.user.tag_ids.id)
 
     @api.model
     def create(self, vals):
