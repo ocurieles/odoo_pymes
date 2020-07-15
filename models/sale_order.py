@@ -7,6 +7,7 @@ class SaleOrder (models.Model):
     def _action_confirm(self):
         res = super(SaleOrder, self).action_confirm()
         for rec in self:
+            2
 
 
 
